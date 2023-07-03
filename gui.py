@@ -10,7 +10,7 @@ class SnakeGui:
         self.data = DataManager()
         self.config = Config()
         self.window = tk.Tk()
-        self.window
+        self.window.title("Snake Game")
         self.window.resizable(False, False)
         self.logo_image = tk.PhotoImage(file="media/logo.png")
         self.window.iconphoto(False, self.logo_image)
@@ -30,7 +30,7 @@ class SnakeGui:
         self.logo()
 
     def logo(self):
-        # Displaying intro/logo screen
+        # Displaying logo screen
         self.config.play_sound_effect_or_background("media/logo.mp3")
         self.bind("menu")
         self.canvas.create_text(
@@ -68,6 +68,7 @@ class SnakeGui:
             "SELECT username, difficult, sound, area FROM setting ORDER BY rowid DESC LIMIT 1"
         )
         setting = self.data.db_cursor.fetchone()
+        
         # Checking if setting alredy exist
         if setting:
             self.config.username = setting[0]
