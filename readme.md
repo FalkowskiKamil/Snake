@@ -20,7 +20,7 @@ pip install requirements.txt
 - Save your high scores in a database for future reference.
 - Customize the game by adjusting the size of the playing area.
 
-## How to install
+## How to run app
 
 Option 1
 - Double click on "Run.pyw"
