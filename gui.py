@@ -3,6 +3,7 @@ from config import Config, BACKGROUND_COLOR
 from data_manager import DataManager
 from game import GameLogic
 import pygame
+import sys
 
 
 class SnakeGui:
@@ -386,7 +387,7 @@ class SnakeGui:
 
     def bind(self, type=""):
         # Binding delete button
-        self.window.protocol("WM_DELETE_WINDOW", lambda: exit())
+        self.window.protocol("WM_DELETE_WINDOW", lambda: sys.exit())
         # Clear bind
         self.unbind()
         match type:
@@ -403,7 +404,7 @@ class SnakeGui:
                 self.window.bind("<Down>", lambda event: self.menu_control("down"))
                 self.window.bind("<Up>", lambda event: self.menu_control("up"))
                 self.window.bind("<Return>", lambda event: self.execute_action())
-                self.window.bind("<Escape>", lambda event: exit())
+                self.window.bind("<Escape>", lambda event: lambda: sys.exit())
 
                 self.bind_list = ["<Return>", "<Escape>", "<Down>", "<Up>"]
             case "game_keybord":
