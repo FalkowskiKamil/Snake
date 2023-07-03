@@ -26,6 +26,9 @@ Option 1
 - Double click on "Run.pyw"
 
 Option 2
+- Double click on "Snake.exe"
+  
+Option 3
 - Run command 
 ```shell
 python Run.pyw
