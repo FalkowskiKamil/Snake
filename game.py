@@ -1,5 +1,5 @@
 from datetime import datetime
-from config import *
+from config import SPACE_SIZE, SNAKE_COLOR
 from snake import Snake
 from food import Food
 import tkinter as tk

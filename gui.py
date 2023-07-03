@@ -1,5 +1,5 @@
 import tkinter as tk
-from config import *
+from config import Config, BACKGROUND_COLOR
 from data_manager import DataManager
 from game import GameLogic
 import pygame

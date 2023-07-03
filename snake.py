@@ -1,4 +1,4 @@
-from config import *
+from config import SPACE_SIZE, BODY_PARTS, SNAKE_COLOR
 
 
 class Snake:

@@ -1,4 +1,4 @@
-from config import *
+from config import SPACE_SIZE, FOOD_COLOR
 import random
 
 
